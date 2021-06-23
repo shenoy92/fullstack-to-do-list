@@ -1,0 +1,57 @@
+:root {
+  --theme-color:#009ee2;
+  --white:#ffffff;
+  --light-black: #111111c7;
+  --danger: #ed1c24;
+  --layover: #1c273a75;
+  --btn-disabled-bg: #009ee282;
+  --btn-disabled-text: #ffffff91;
+  --box-shadow-color: #00000033;
+}
+
+*{
+  margin: 0;
+  padding: 0;  
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  height: calc(100vh - 44px);
+}
+
+h1, h2 {
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+}
+
+#root, .custom-container {
+  height: 100%;
+}
+
+.custom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.todo-input {
+  border: none;
+  border-bottom: 1px solid var(--light-black);
+  padding: 5px;
+  outline: none;
+}
+.todo-btn {
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  background-color: var(--theme-color);
+  color: var(--white);
+  font-size: 18px;
+}

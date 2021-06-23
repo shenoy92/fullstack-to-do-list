@@ -1,0 +1,17 @@
+.msgWrapper {
+    box-shadow: 0 0 4px var(--theme-color);
+    padding: 10px;
+    font-size: 18px;
+    position: fixed;
+    top: 50px;
+    right: 5px;
+    min-width: 200px;
+    max-width: 500px;
+    border-radius: 3px;
+    color: var(--theme-color);;
+}
+
+.error {
+    box-shadow: 0 0 4px var(--danger);
+    color: var(--danger);
+}

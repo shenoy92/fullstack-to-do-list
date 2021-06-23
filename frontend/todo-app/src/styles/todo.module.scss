@@ -1,0 +1,120 @@
+.todoContainer {
+    height: 100%;
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 5px;
+    }
+    .logoutBtn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border: 0;
+        background-color: transparent;
+        color: var(--danger);
+        font-weight: 800;
+        font-size: 18px;
+    }
+    form {
+        padding-top: 50px;
+        text-align: center;
+        input {
+            width: 100%;
+            padding: 10px;
+            font-size: 20px;
+        }
+        button {
+            width: 100%;
+            margin-top: 10px;
+            box-shadow: 0 0 5px var(--box-shadow-color);
+            &:disabled {
+                background-color: var(--btn-disabled-bg);
+                color: var(--btn-disabled-text);
+                cursor: auto;
+            }
+        }
+    }
+    .todoListWrapper {
+        height: calc(100vh - 280px);
+        overflow: auto;
+        padding-right: 2px;
+        margin-top: 50px;
+        ul {
+            list-style: none;
+            li {
+                list-style: none;
+                border: 1px solid #111;
+                margin-bottom: 5px;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                p {
+                    font-size: 18px;
+                }
+                .actions {
+                    button {
+                        border: 0;
+                        background-color: transparent;
+                    }
+                    .edit {
+                        color: var(--theme-color);
+                    }
+                    .delete {
+                        color:  var(--danger);
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .emptyListMsg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--light-black);
+        }
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .todoContainer {
+        /* width */
+        ::-webkit-scrollbar {
+            width: 5px;
+        }
+        .logoutBtn {
+            top: 13px;
+            font-size: 16px;
+        }
+        // form {
+        //     display: flex;
+        //     flex-direction: column;
+        //     padding-top: 20px;
+            // input {
+            //     width: 100%;
+            //     padding: 0;
+            // }
+            // button {
+            //     width: 100%;
+            //     margin-top: 5px;
+            //     margin-left: 0;
+            // }
+        // }
+        .todoListWrapper {
+            margin-top: 20px;
+            height: calc(100vh - 180px);
+        }
+    }
+}

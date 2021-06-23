@@ -1,0 +1,24 @@
+.loginFormContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    margin: 0 auto;
+    height: 100%;
+    justify-content: center;
+    form {
+        display: flex;
+        flex-direction: column; 
+        button {
+            margin-top: 20px;
+            box-shadow: 0 0 5px var(--box-shadow-color);
+        }
+    }
+
+    p {
+        margin-top: 10px;
+        text-align: center;
+        a {
+            color: var(--theme-color);
+        }
+    }
+}

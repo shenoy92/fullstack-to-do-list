@@ -1,0 +1,11 @@
+.HeaderContainer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--theme-color);
+    box-shadow: 0 0 5px var(--box-shadow-color);
+    span {
+        font-weight: 700;
+        font-size: 20px;
+        color: var(--white);
+    }
+}
